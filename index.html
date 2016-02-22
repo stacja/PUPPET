@@ -237,10 +237,7 @@
       </section>
 
       <section data-background-color="#A61C00">
-        <h1>Zadanie 1</h1>
-
-        <p>Dla każdego z podpunktu wymienić kilka narzędzi bądź rozwiązań</p>
-        <p>Proszę użyć internetu i własnych doświadczeń :-)</p>
+        <h1>Zadanie</h1>
       </section>
 
       <section>
@@ -314,14 +311,7 @@ takich jak Puppet czy Chef</li>
       </section>
 
       <section data-background-color="#A61C00">
-        <h1>Zadanie 2</h1>
-        <h2>Dyskusja</h2>
-        <ul>
-          <li>Co myślisz o DevOps?</li>
-          <li>Czy potrafisz wskazać podobne problemy w swojej organizacji?</li>
-          <li>Czy DevOps różni się znacznie od innych podejść?</li>
-          <li>Na co należy uważać przy DevOps?</li>
-        </ul>
+        <h1>Dyskusja</h1>
       </section>
 
       <section>
@@ -565,13 +555,7 @@ $ _</code></pre>
       </section>
 
       <section data-background-color="#A61C00">
-        <h1>Zadanie 3</h1>
-        <ul>
-          <li>Zainstalować Vagranta</li>
-          <li>Przygotować maszynę z obrazu: <code>puppetlabs/ubuntu-14.04-64-nocm</code></li>
-          <li>Zainstalować podstawowe pakiety: git, htop, telnet, itp. i sprawdzić separację ze swoim systemem</li>
-          <li>Zatrzymać, usunąć, postawić na nowo, na koniec usunąć</li>
-        </ul>
+        <h1>Zadanie</h1>
       </section>
 
       <section>
@@ -676,25 +660,11 @@ service { 'postgresql':
         </section>
 
         <section data-background-color="#A61C00">
-          <h1>Zadanie 4</h1>
-          <ol>
-            <li>Używając Vagranta utworzyć snapshot przy użyciu sahara i zainstalować puppet z rubygems</li>
-            <li>Uruchomić <code>puppet apply manifest.pp</code>, dwukrotnie, sprawdzając efekt<pre><code class="puppet">package { 'nginx':
-  ensure => 'installed',
-}</code></pre></li>
-            <li>Przywrócić snapshot przy użyciu sahara i zainstalować puppet z repozytoriów puppetlabs</li>
-            <li>Redo #2 (użyj też trybu <code>--noop</code> oraz <code>--debug</code>)</li>
-          </ol>
+          <h1>Zadanie</h1>
         </section>
 
         <section data-background="#5A983F">
-          <h1>Zadanie 5</h1>
-          <h2>Dyskusja</h2>
-          <ul>
-            <li>Czy praca z Vagrantem wydaje się prosta?</li>
-            <li>Jakie problemy mogą się pojawić? Na co uważać?</li>
-            <li>Jakie widzisz plusy i minusy?</li>
-          </ul>
+          <h1>Dyskusja</h1>
         </section>
       </section>
 
@@ -743,14 +713,7 @@ $ _
         </section>
 
         <section data-background="#A61C00">
-          <h1>Zadanie 6</h1>
-          <ul>
-            <li>Uruchom polecenie: <code>facter ipaddress</code></li>
-            <li>Uruchom polecenie: <code>facter fqdn</code></li>
-            <li>Uruchom polecenie: <code>facter operatingsystem</code></li>
-            <li>Uruchom polecenie: <code>facter -p</code></li>
-            <li>Co zwracają te polecenia? Jak można to wykorzystać?</li>
-          </ul>
+          <h1>Zadanie</h1>
         </section>
 
         <section>
@@ -828,16 +791,7 @@ user { 'ksuszynski':
         </section>
 
         <section data-background="#A61C00">
-          <h1>Zadanie 7</h1>
-          <ul>
-            <li>Utwórz użytkownika: <code>useradd -s /bin/bash -b /home twoje-imie</code></li>
-            <li>Uruchom polecenie: <code>puppet resource user twoje-imie</code></li>
-            <li>Ustaw hasło: <code>passwd twoje-imie</code></li>
-            <li>Sprawdź, uruchamiając polecenie: <code>puppet resource user twoje-imie</code></li>
-            <li>Zmień shell przy użyciu: <code>puppet resource user twoje-imie shell=/bin/sh</code></li>
-            <li>Wykonaj i sprawdź wynik: <code>puppet resource user</code></li>
-            <li>Co zwracają te polecenia? Jak można to wykorzystać?</li>
-          </ul>
+          <h1>Zadanie</h1>
         </section>
       </section>
 
@@ -970,16 +924,7 @@ service { 'ssh':
 }</code></pre>
         </section>
         <section data-background-color="#A61C00">
-          <h1>Zadanie 8</h1>
-          <ul>
-            <li>Napisz prosty manifest instalujący i uruchamiający jedną z usług: apache, nginx, postgres, mysql</li>
-            <li>Sprawdz manifest przy użyciu: <code>puppet parser validate plik.pp</code></li>
-            <li>Uruchom przy użyciu Vagrant</li>
-            <li>Wykorzystaj typy package, service, file i user</li>
-            <li>Pamiętaj o ustawieniu kolejności</li>
-            <li>Zatrzymaj usługę "ręcznie": <code>service ... stop</code> i uruchom Puppet ponownie</li>
-            <li>Wywołaj w trybie debug</li>
-          </ul>
+          <h1>Zadanie</h1>
         </section>
       </section>
 
@@ -1046,14 +991,7 @@ file { '/etc/passwd':
         </section>
 
         <section data-background-color="#A61C00">
-          <h1>Zadanie 9</h1>
-          <ul>
-            <li>Napisz manifest instalujący i uruchamiający usługę apache</li>
-            <li>Powinna ona zawierać warunkową obsługę dla rodzin systemów Debian i Red Hat</li>
-            <li>Sprawdź manifest przy użyciu: <code>puppet parser validate plik.pp</code></li>
-            <li>Uruchom przy użyciu Vagrant</li>
-            <li>Pamiętaj o ustawieniu kolejności</li>
-          </ul>
+          <h1>Zadanie</h1>
         </section>
       </section>
 
@@ -1077,14 +1015,7 @@ file { '/etc/passwd':
         </section>
 
         <section data-background-color="#A61C00">
-          <h1>Zadanie 10</h1>
-          <ul>
-            <li>Używając Vagranta uruchomić 2 maszyny master i agent</li>
-            <li>Zainstalować na obu puppet</li>
-            <li>Połączyć agenta do mastera</li>
-            <li>Ma masterze dodać kod i przydzielić go dla agenta</li>
-            <li>Uruchomić agenta</li>
-          </ul>
+          <h1>Zadanie</h1>
         </section>
       </section>
 
@@ -1132,12 +1063,7 @@ file { '/etc/passwd':
         </section>
 
         <section data-background-color="#A61C00">
-          <h1>Zadanie 11</h1>
-          <ul>
-            <li>Wykorzystując kod z zadania 9 przetestować działanie trybu bezoperacyjnego</li>
-            <li>Przywrócić maszynę do stanu początkowego - sahara lub vagrant destroy</li>
-            <li>Uruchomić kod z flagą <code>--noop</code></li>
-          </ul>
+          <h1>Zadanie</h1>
         </section>
       </section>
 
@@ -1258,13 +1184,7 @@ define apache::vhost ($port, $docroot, $servername = $title, $vhost_name = '*') 
 }</code></pre>
         </section>
         <section data-background-color="#A61C00">
-          <h1>Zadanie 12</h1>
-          <ul>
-            <li>Wykorzystując kod z zadania 11 utworzyć moduł puppet i przenieść kod do klas i definicji</li>
-            <li>Przygotować smoke testy w <code>tests</code></li>
-            <li>Uruchomić testy z flagą <code>--noop</code></li>
-            <li>Uruchomić kod klas</li>
-          </ul>
+          <h1>Zadanie</h1>
         </section>
       </section>
 
@@ -1311,14 +1231,7 @@ define apache::vhost ($port, $docroot, $servername = $title, $vhost_name = '*') 
       </section>
 
       <section data-background-color="#A61C00">
-        <h1>Zadanie 13</h1>
-        <ul>
-          <li>Wykorzystując poznane umiejętności napisz moduł puppeta instalujący i konfigurujący blog WordPress</li>
-          <li>Instalacja interpretera PHP, serwera bazy danych, serwera www, konfiguracja użytkowników systemowych</li>
-          <li>Nie zapomnij o testach dymnych</li>
-          <li>Postaraj się zachować idempotencję</li>
-          <li>Uruchom kod i przetestuj</li>
-        </ul>
+        <h1>Zadanie</h1>
       </section>
 
       <section>
