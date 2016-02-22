@@ -584,14 +584,14 @@ $ _</code></pre>
         <section>
           <h1>Czytelność Puppet</h1>
           <pre><code>package { 'postgresql':
-      ensure => 'installed',
-      }
+  ensure => 'installed',
+}
 
-      service { 'postgresql':
-      ensure  => 'running',
-      enable  => true,
-      require => Package['postgresql'],
-      }
+service { 'postgresql':
+  ensure  => 'running',
+  enable  => true,
+  require => Package['postgresql'],
+}
       </code></pre>
           <p class="fragment">Co to znaczy? Na pierwszy rzut oka?</p>
         </section>
@@ -748,7 +748,7 @@ $ _
             <li>Uruchom polecenie: <code>facter ipaddress</code></li>
             <li>Uruchom polecenie: <code>facter fqdn</code></li>
             <li>Uruchom polecenie: <code>facter operatingsystem</code></li>
-            <li>Uruchom polecenie: <code>facter</code></li>
+            <li>Uruchom polecenie: <code>facter -p</code></li>
             <li>Co zwracają te polecenia? Jak można to wykorzystać?</li>
           </ul>
         </section>
